@@ -1,0 +1,23 @@
+{
+  "name": "photo-book-app",
+  "version": "1.0.0",
+  "description": "A modern web application for creating and ordering custom photo books",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:frontend": "npm run dev --workspace=apps/frontend",
+    "dev:backend": "npm run dev --workspace=apps/backend",
+    "build:frontend": "npm run build --workspace=apps/frontend",
+    "build:backend": "npm run build --workspace=apps/backend",
+    "start:frontend": "npm run start --workspace=apps/frontend",
+    "start:backend": "npm run start --workspace=apps/backend",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.0"
+  }
+}
